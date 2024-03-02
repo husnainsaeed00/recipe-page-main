@@ -1,0 +1,149 @@
+body{
+    background-color: hsl(0, 0%, 100%);
+    padding: 3% 7%;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: repeat(7, 1fr);
+
+}
+.banner-img {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    background: url(assets/images/image-omelette.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    padding: 10px; /* Adjusted padding */
+    margin: 0px;
+}
+.banner-heading{
+    grid-column:1/3;
+    grid-row:3/4;
+    margin-bottom: 0px;
+}
+.banner-heading>h2{
+    font-size:44px;
+    font-family: monospace;
+    font-weight: 600;
+}
+.prep-time{
+    grid-column:1/3;
+    grid-row:4/5;
+    background-color:hsl(330, 100%, 98%);
+    border-radius:9px;
+    padding:2px;
+    margin-top: 0px;
+    
+}
+.prep-time>h2{
+    color: hsl(14, 45%, 36%);
+}
+.prep-list {
+    color: black; /* Set the color of the list text */
+}
+
+.prep-list li::marker {
+    color: hsl(332, 51%, 32%); /* Set the color of the list signs (bullets) */
+}
+.prep-list>li{
+    margin:20px;
+}
+
+.ingredients{
+    grid-column:1/3;
+    grid-row:5/6;
+    border-bottom:1px solid hsl(30, 54%, 90%);
+}
+.ingredients>h2{
+    color: hsl(332, 51%, 32%);
+}
+.ingredients-list>li{
+    margin:20px;
+}
+.ingredients-list li::marker{
+    color: hsl(332, 51%, 32%);
+}
+
+.instructions{
+    grid-column:1/3;
+    grid-row:6/7;
+    border-bottom:1px solid hsl(30, 54%, 90%);
+}
+.instructions>h2{
+    color: hsl(14, 45%, 36%);
+}
+.instructions-list>li::marker{
+    color: hsl(332, 51%, 32%);
+}
+.instructions-list>li{
+    margin:20px;
+}
+.nutritions{
+    grid-column:1/3;
+    grid-row:7/8;
+}
+.nutritions>h2{
+    color: hsl(14, 45%, 36%);
+}
+table>tr{
+    border-bottom:2px solid gray;
+}
+.custom-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .custom-table td, .custom-table th {
+    border-bottom: 1px solid #dddddd; /* Add borders to cells */
+    text-align: left;
+    padding: 8px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+
+    /* CSS rules for mobile screens */
+    body{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: repeat(7, 1fr);
+    }
+    .banner-img {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .banner-heading{
+        grid-column: 1/3;
+        grid-row: 2/3;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .prep-time{
+        grid-column: 1/3;
+        grid-row: 3/4;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .ingredients{
+        grid-column: 1/3;
+        grid-row: 4/5;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .instructions{
+        grid-column: 1/3;
+        grid-row: 5/6;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .nutritions{
+        grid-column: 1/3;
+        grid-row: 6/7;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+  }
+  
+  
